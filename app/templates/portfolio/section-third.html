@@ -1,0 +1,20 @@
+<div class="center padded">
+    <div class="content">
+        <div class="row vert-pad">
+            <div class="left padded">
+                <h1>Let's work Together!</h1>
+                <p>I'm going to give my best effort! to learn,  contribute and then we have the best relation
+                    in a long-term
+                </p>
+            </div>
+            <div id="contact" class="right padded">
+                <form method="post" class="contact-form" action="{{ url_for('portfolio.mail') }}">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea placeholder="Message" name="message" minlength=10 required></textarea>
+                    <button class="btn full-width">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

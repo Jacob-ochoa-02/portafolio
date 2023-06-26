@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Welcome!
+{% endblock %}
+
+{% block content %}
+    <div class="hero">
+        <div class="hero-content">
+            <div class="left">
+                <h1>I'm a developer</h1>
+                <h1>Jacob Ochoa Lopera</h1>
+                <p>I build dinamic Python apps using relational data bases.</p>
+                <a href="#contact" class="btn">Contact me</a>
+            </div>
+            <div class="right">
+                <img src="{{ url_for('static', filename='firstImage.png') }}" width=600px>
+            </div>
+        </div>
+    </div>
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% endblock %}
